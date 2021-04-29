@@ -12,12 +12,13 @@ setInterval(function() {
 	const two = Math.floor(counter / 10);
 	const one = Math.floor(counter / 1);
 	counter++;
+
 	ReactDOM.render(
 		<SimpleCounter
-			digitOne={one}
-			digitTwo={two}
-			digitThree={three}
-			digitFour={four}
+			digitFour={four % 10}
+			digitThree={three % 10}
+			digitTwo={two % 10}
+			digitOne={one % 10}
 		/>,
 		document.querySelector("#app")
 	);

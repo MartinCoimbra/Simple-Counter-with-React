@@ -9,16 +9,16 @@ export function SimpleCounter(props) {
 					<i className="fas fa-clock"></i>
 				</div>
 				<div className="col-2 cuadro h2 text-center">
-					{props.digitFour % 10}
+					{props.digitFour}
 				</div>
 				<div className="col-2 cuadro h2 text-center">
-					{props.digitThree % 10}
+					{props.digitThree}
 				</div>
 				<div className="col-2 cuadro h2 text-center">
-					{props.digitTwo % 10}
+					{props.digitTwo}
 				</div>
 				<div className="col-2 cuadro h2 text-center text-white">
-					{props.digitOne % 10}
+					{props.digitOne}
 				</div>
 			</div>
 		</div>
